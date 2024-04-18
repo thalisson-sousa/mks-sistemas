@@ -1,0 +1,16 @@
+.loading {
+    font-size: 2rem;
+    margin: 200px auto 0;
+    animation: scale 1s linear infinite;
+    width: 100%;
+}
+
+@keyframes scale {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(0.7);
+    }
+}
