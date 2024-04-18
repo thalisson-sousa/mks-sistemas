@@ -1,0 +1,37 @@
+.header {
+  background-color: #0f52ba;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.header__title {
+  display: flex;
+  color: white;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.title__one {
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 19px;
+  text-align: left;
+}
+
+.title__two {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 19px;
+  text-align: left;
+
+}
