@@ -1,0 +1,8 @@
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #eeeeee;
+  height: 34px;
+}
