@@ -1,3 +1,4 @@
+
 import React, { useContext } from 'react';
 
 import CartItem from '../CartItem/CartItem';
@@ -7,9 +8,10 @@ import formatCurrency from '../../utils/formatCurrency';
 
 export default function Cart() {
   const {cartItems, isCartVisible} = useContext(AppContext);
+  
+  const totalPrice =+ cartItems.reduce((acc, item) => parseInt(item.price) + acc, 0);
 
-  const totalPrice = cartItems.reduce((acc, item) => parseInt(item.price) + acc, 0);
-
+  
   return (
     <section className={`Cart ${isCartVisible ? 'cart-active' : ''}`}>
       <h1>Carrinho</h1>

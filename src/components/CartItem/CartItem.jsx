@@ -27,8 +27,12 @@ export default function CartItem({data}) {
     if(event > 0 ) {
       setQtd(event)
       setValue(price * event)
+
+      const updatedItems = cartItems.filter((item) => item.price = value);
+      setCartItems(updatedItems)
     }
   }
+
 
   return (
     <section>
